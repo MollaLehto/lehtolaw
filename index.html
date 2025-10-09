@@ -4,54 +4,122 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>Lehto Law | Legal Expertise with Integrity</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
   <style>
-    /* Quick inline enhancements — you can move these to main.css */
+    /* Simple self-contained style */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #f9f9f9;
       color: #222;
       line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    header, section {
+      width: 100%;
+      padding: 4rem 2rem;
+      text-align: center;
     }
     #header {
       background: linear-gradient(to bottom right, #1d3c6a, #2e5b9a);
       color: #fff;
-      text-align: center;
-      padding: 6rem 2rem;
     }
-    #header h1 strong {
-      color: #fff;
+    #header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
     }
-    #header .button {
+    #header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .button {
       background: #fff;
       color: #1d3c6a;
-      border: none;
       padding: 0.8rem 2rem;
       border-radius: 4px;
       font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: background 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
     }
-    #header .button:hover {
+    .button:hover {
       background: #e5e5e5;
       color: #122a4e;
     }
     .main {
-      padding: 5rem 2rem;
-      background-color: #fff;
-      margin-bottom: 2rem;
+      background: #fff;
+      max-width: 1000px;
+      margin: 2rem auto;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .main.style2 {
-      background-color: #f0f3f8;
+      padding: 3rem 2rem;
+      border-radius: 8px;
     }
     .main h2 {
       color: #1d3c6a;
+      margin-bottom: 1rem;
     }
-    .button.primary {
+    .main p {
+      margin-bottom: 1.2rem;
+    }
+    #footer {
       background: #1d3c6a;
       color: #fff;
+      padding: 2rem;
+      text-align: center;
     }
-    .button.primary:h
+    #footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    #footer a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <h1>Lehto Law</h1>
+    <p>Trusted Legal Representation for Businesses and Individuals.<br>
+    Integrity. Clarity. Commitment.</p>
+    <a href="#about" class="button">Learn More</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="main">
+    <h2>About Our Firm</h2>
+    <p>Lehto Law provides comprehensive legal solutions tailored to your unique situation. Our team is dedicated to ensuring transparency, excellence, and results for every client we serve. Whether handling corporate, civil, or family law matters, we bring professionalism and compassion to each case.</p>
+  </section>
+
+  <!-- Practice Areas -->
+  <section id="practice" class="main">
+    <h2>Practice Areas</h2>
+    <p><strong>Corporate Law:</strong> Contract review, corporate governance, and dispute resolution.<br>
+       <strong>Family Law:</strong> Compassionate support through divorce, custody, and estate planning.<br>
+       <strong>Litigation:</strong> Skilled courtroom representation backed by thorough preparation.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="main">
+    <h2>Contact Us</h2>
+    <p>Let’s discuss how we can help with your legal needs.</p>
+    <a href="mailto:info@lehtolaw.com" class="button">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <section id="footer">
+    <p>&copy; 2025 Lehto Law | All Rights Reserved</p>
+    <p>
+      <a href="#">LinkedIn</a> |
+      <a href="mailto:info@lehtolaw.com">Email</a>
+    </p>
+  </section>
+
+</body>
+</html>
