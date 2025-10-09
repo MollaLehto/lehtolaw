@@ -6,36 +6,21 @@
   <title>Lehto Law | Legal Expertise with Integrity</title>
 
   <style>
-    /* Simple self-contained style */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      color: #222;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-    }
-    header, section {
-      width: 100%;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
+    /* Reset & basic styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #222; line-height: 1.6; background-color: #f9f9f9; }
+
+    /* Hero / Header */
     #header {
-      background: linear-gradient(to bottom right, #1d3c6a, #2e5b9a);
+      position: relative;
+      background: url('overlay1.png') center/cover no-repeat, linear-gradient(to bottom right, #1d3c6a, #2e5b9a);
       color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
     }
-    #header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-    #header p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .button {
+    #header h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    #header p { font-size: 1.2rem; margin-bottom: 2rem; }
+    #header .button {
       background: #fff;
       color: #1d3c6a;
       padding: 0.8rem 2rem;
@@ -45,45 +30,34 @@
       transition: 0.3s;
       display: inline-block;
     }
-    .button:hover {
-      background: #e5e5e5;
-      color: #122a4e;
-    }
-    .main {
-      background: #fff;
-      max-width: 1000px;
-      margin: 2rem auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      padding: 3rem 2rem;
+    #header .button:hover { background: #e5e5e5; color: #122a4e; }
+
+    /* Sections */
+    section { width: 100%; padding: 4rem 2rem; text-align: center; }
+    .main { background: #fff; max-width: 1000px; margin: 2rem auto; box-shadow: 0 4px 8px rgba(0,0,0,0.05); padding: 3rem 2rem; border-radius: 8px; }
+    .main h2 { color: #1d3c6a; margin-bottom: 1rem; }
+    .main p { margin-bottom: 1.2rem; }
+    .image { margin: 1rem 0; }
+    .image img { max-width: 100%; border-radius: 8px; }
+
+    /* Footer */
+    #footer { background: #1d3c6a; color: #fff; padding: 2rem; text-align: center; }
+    #footer a { color: #fff; text-decoration: none; margin: 0 0.5rem; }
+    #footer a:hover { opacity: 0.8; }
+
+    /* Overlay background for decorative effect */
+    .overlay-bg {
+      position: relative;
+      background: url('overlay2.png') center/cover no-repeat;
       border-radius: 8px;
-    }
-    .main h2 {
-      color: #1d3c6a;
-      margin-bottom: 1rem;
-    }
-    .main p {
-      margin-bottom: 1.2rem;
-    }
-    #footer {
-      background: #1d3c6a;
-      color: #fff;
       padding: 2rem;
-      text-align: center;
-    }
-    #footer a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-    #footer a:hover {
-      opacity: 0.8;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
+  <!-- Header / Hero -->
   <section id="header">
     <h1>Lehto Law</h1>
     <p>Trusted Legal Representation for Businesses and Individuals.<br>
@@ -91,21 +65,36 @@
     <a href="#about" class="button">Learn More</a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="main">
+  <!-- About Section -->
+  <section id="about" class="main overlay-bg">
     <h2>About Our Firm</h2>
     <p>Lehto Law provides comprehensive legal solutions tailored to your unique situation. Our team is dedicated to ensuring transparency, excellence, and results for every client we serve. Whether handling corporate, civil, or family law matters, we bring professionalism and compassion to each case.</p>
+    <div class="image">
+      <img src="pic01.png" alt="Law office">
+    </div>
   </section>
 
-  <!-- Practice Areas -->
+  <!-- Practice Areas Section -->
   <section id="practice" class="main">
     <h2>Practice Areas</h2>
+    <div class="image">
+      <img src="pic02.png" alt="Practice Areas">
+    </div>
     <p><strong>Corporate Law:</strong> Contract review, corporate governance, and dispute resolution.<br>
        <strong>Family Law:</strong> Compassionate support through divorce, custody, and estate planning.<br>
        <strong>Litigation:</strong> Skilled courtroom representation backed by thorough preparation.</p>
   </section>
 
-  <!-- Contact -->
+  <!-- Team Section -->
+  <section id="team" class="main overlay-bg">
+    <h2>Our Team</h2>
+    <div class="image">
+      <img src="pic03.png" alt="Our Team">
+    </div>
+    <p>Experienced. Approachable. Committed to your success.</p>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="main">
     <h2>Contact Us</h2>
     <p>Let’s discuss how we can help with your legal needs.</p>
